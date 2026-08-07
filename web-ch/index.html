@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent house - Find Verified Rooms Without Brokers</title>
+  
+  <!-- GOOGLE FONTS (Poppins for headings, Inter for body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- LINK EXTERNAL STYLE SHEET -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 🟦 NAVBAR -->
+
+  <header class="navbar">
+    <a href="#" class="logo"> 📍Rent House </a>
+    <nav class="nav-links">
+      <a href="#">Home</a>  
+      <a href="#for-tenants">For Tenants</a>
+      <a href="#for-landlords">For Landlords</a>
+      <a href="#about-us">About</a>
+      <a href="#contact-support">Contact</a>
+    </nav>
+    <a href="#" class="btn btn-blue" id="downloadBtn"> 
+      Download App</a>
+  </header>
+
+  <!-- 🟩 HERO SECTION -->
+
+  <section class="hero">
+    <div class="hero-content">
+
+        <h1>Find Verified Rooms Without Brokers</h1>
+
+        <p>
+            Move to a new city with confidence. Discover verified rooms,
+            trusted landlords, transparent pricing, and secure booking.
+        </p>
+
+        <div class="hero-btns">
+
+            <!-- Download Button -->
+            <a href="#" class="btn btn-blue" id="downloadBtn2">
+                Download App
+            </a>
+
+            <!-- List Property Button -->
+            <a href="#" class="btn btn-green-outline" id="listform">
+                <!-- List Your Property -->
+                 Open Q&A
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="phone-mockup">
+
+            <strong>Rent House App Interface</strong>
+
+            <p>[Launching First in Jharkhand major places]</p>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Download Permission Modal -->
+<div id="downloadModal" class="modal-overlay">
+
+    <div class="modal-box">
+
+        <div class="modal-icon">📲</div>
+       
+        <h3 style="color: red;"> downloading failed </h3>
+        <!-- <h3>App Download Permission</h3> -->
+
+        <p>
+            <!-- Do you want to download the Rent house App? -->
+             we are currently working on our app development and lounching. Please stay tuned for updates and announcements regarding the official release date. we will comming soon. Thank you!
+        </p>
+
+        <div class="modal-btns">
+
+            <!-- <button class="modal-btn btn-allow" id="allowBtn">
+                Allow & Download
+            </button> -'''' -->
+
+            <button class="modal-btn btn-deny" id="denyBtn">
+                ok
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- listing proprty -->
+
+  <!-- <div class="list-property-form" id="listPropertyForm">
+    <h3>List Your Property</h3>
+    <form>
+      <input type="text" placeholder="Property Name" required>
+      <input type="text" placeholder="Location" required>
+      <input type="number" placeholder="Price" required>
+      <textarea placeholder="Description" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <button class="close-btn" id="closeListForm">Close</button>
+  </div>
+</div> -->
+
+<!-- feedback system  -->
+
+<!-- feedback / survey modal -->
+<div id="listModal" class="listmodal-overlay">
+    <div class="listmodal-box">
+        <div class="listmodal-icon">🏠</div>
+        
+        <h3 style="color: #2563EB;"> Choose Your Role </h3>
+
+        <p>
+            Please fill out the form based on whether you are looking for a rental room or listing a property.
+        </p>
+
+        <div class="listmodal-btns vertical-btns">
+            <!-- 🌟 Form 1: Tenant Form -->
+            <button class="listmodal-btn btn-tenant" id="tenantFormBtn">
+                📋 Form for Tenants (Renter)
+            </button>
+
+            <!-- 🌟 Form 2: Landlord Form -->
+            <button class="listmodal-btn btn-owner" id="ownerFormBtn">
+                🔑 Form for Property Owners
+            </button>
+
+            <!-- Cancel Button -->
+            <button class="listmodal-btn listbtn-deny" id="listdenyBtn">
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>
+
+  <!-- 🟨 TRUST SECTION -->
+  <div class="trust-section">
+    <h2>Trusted by Students & Working Professionals</h2>
+    <div class="trust-grid">
+      <div class="trust-item"><span>✓</span> Verified Owners</div>
+      <div class="trust-item"><span>✓</span> No Broker</div>
+      <div class="trust-item"><span>✓</span> Real Photos</div>
+      <div class="trust-item"><span>✓</span> Walkthrough Videos</div>
+      <div class="trust-item"><span>✓</span> Secure Booking</div>
+    </div>
+  </div>
+
+  <!-- 🟧 HOW IT WORKS -->
+  <section>
+    <h2 class="section-title">How It Works</h2>
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="step-num">1️⃣</div>
+        <h3>Search Room</h3>
+        <p>Filter by location, budget, and configurations easily.</p>
+      </div>
+      <div class="how-card">
+        <div class="step-num">2️⃣</div>
+        <h3>View Photos & Videos</h3>
+        <p>No wasted site visits. See accurate, actual spaces online.</p>
+      </div>
+      <div class="how-card">
+        <div class="step-num">3️⃣</div>
+        <h3>Verify Owner</h3>
+        <p>Check verified badges and feedback seamlessly.</p>
+      </div>
+      <div class="how-card">
+        <div class="step-num">4️⃣</div>
+        <h3>Book Securely</h3>
+        <p>Lock your price and secure your slot via encrypted escrows.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🟪 WHY Rent house? -->
+  <section class="bg-gray", id="for-landlords">
+    <h2 class="section-title", id="for-tenants">Why Choose Rent house?</h2>
+    <div class="why-grid">
+      <div class="why-col tenants", >
+        <h3>For Tenants</h3>
+        <ul class="why-list">
+          <li>Verified Owners</li>
+          <li>Affordable Rooms</li>
+          <li>No Broker Fee</li>
+          <li>Real Reviews</li>
+          <li>Safe and secure Rooms</li>
+          <li>Secure Payment</li>
+          <li>Customer Supports</li>
+        </ul>
+      </div>
+      <div class="why-col landlords">
+
+        <h3>For Property Owners</h3>
+        <ul class="why-list">
+          <li>Free Listing</li>
+          <li>Verified Tenants</li>
+          <li>Faster Occupancy</li>
+          <li>Digital Booking</li>
+          <li>Less Vacancy</li>
+          <li>24/7 Visibility</li>
+          <li>Customer Supports</li>
+          
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🟦 APP FEATURES -->
+
+
+  <section>
+    <h2 class="section-title">All Built Into The Mobile App</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">📷</div>
+        <h3>Real Photos</h3>
+        <p>Every photo captured matches the active current layout status.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🎥</div>
+        <h3>Walkthrough Videos</h3>
+        <p>Take virtual, thorough continuous property walkthrough tours instantly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🛡️</div>
+        <h3>Identity Verification</h3>
+        <p>Robust profiles ensuring transparency across properties.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">⭐</div>
+        <h3>Reviews</h3>
+        <p>Read transparent feedback checks from verified residents.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">💳</div>
+        <h3>Secure Payment</h3>
+        <p>Pay your tokens directly through safe gateway checkouts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📄</div>
+        <h3>Digital Records</h3>
+        <p>Access legal agreement drafts, profiles, and transactions anytime.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 🟩 SCREENSHOTS -->
+
+
+ <section class="bg-gray">
+  <h2 class="section-title">App Walkthrough</h2>
+  
+  <div class="shots-grid">
+    
+    <div class="shot-card">
+      <div class="shot-img-wrapper">
+        <img src="assects/images/home-screen.jpeg" alt="Home Screen">
+      </div>
+      <h4>Home Screen</h4>
+    </div>
+    
+    <div class="shot-card">
+      <div class="shot-img-wrapper">
+        <img src="assects/images/property-screen.png" alt="Property Details">
+      </div>
+      <h4>Property Details </h4>
+    </div>
+
+     <div class="shot-card">
+      <div class="shot-img-wrapper">
+        <img src="assects/images/image upload.jpeg" alt="real time images">
+      </div>
+      <h4>Real-Time Images</h4>
+    </div>
+    
+   
+    
+    <div class="shot-card">
+      <div class="shot-img-wrapper">
+        <img src="assects/images/owner dashboard.png" alt="Owner Dashboard">
+      </div>
+      <h4>Owner Dashboard</h4>
+    </div>
+
+     <div class="shot-card">
+       <div class="shot-img-wrapper">
+        <img src="assects/images/property full.jpeg" alt="Secure Booking">
+       </div>
+       <h4>Secure Booking</h4>
+     </div>
+
+     <div class="shot-card">
+       <div class="shot-img-wrapper">
+        <img src="assects/images/booking.jpeg" alt="Booking preview">
+       </div>
+       <h4>Booking preview</h4>
+     </div>
+
+  </div>
+</section>
+
+
+
+  <!-- 🟨 CITIES -->
+
+
+  <section>
+    <div class="cities-box">
+      <h2>Launching First in Jharkhand 🚀</h2>
+      <h4>Available Cities top-Tier school & Colleges area </h4>
+      <div class="city-tags">
+        
+        <div class="city-btn">Hazaribagh</div>
+        <div class="city-btn">Ranchi</div>
+      </div>
+      <!-- <div class="waitlist-form">
+        <p>Don't see your city? Join the waitlist to get early access alerts when we open bookings near you.</p>
+        <div class="form-group">
+          <input type="email" placeholder="Enter your email address">
+          <button class="btn btn-blue">Get Early Access</button>
+        </div>
+      </div> -->
+      <h2 style="color: red;">We are currently working on our app development and lounching. Please stay tuned for updates and announcements regarding the official release date. we will comming soon. Thank you!</h2> 
+    </div>
+  </section>
+
+  <!-- 🟧 FAQ -->
+  <section class="bg-gray">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-header">Is Rent house free?</div>
+        <div class="faq-body">Yes! Searching for spaces, browsing verified options, and basic individual listings are entirely free without brokerage constraints.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-header">How verification works?</div>
+        <div class="faq-body">Our regional structural teams cross-reference location uploads, evaluate visual validity checklists, and review documentation parameters manually.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-header">How booking works?</div>
+        <div class="faq-body">Select your preferences, process the protected dynamic security deposit downpayment via the interface escrow, and connect with your landlord.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-header">Can landlords list free?</div>
+        <div class="faq-body">Yes. Landlords get immediate property profiles and tenant exposure with zero initialization or premium subscription obligations.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🟪 CTA -->
+  <section>
+    <div class="cta-container">
+      <div class="cta-card border-blue">
+        <h2>Ready to Find Your Next Home?</h2>
+        <a href="#" class="btn btn-blue">Download App</a>
+      </div>
+      <div class="cta-card border-green">
+        <h2>Own a Property?</h2>
+        <a href="#" class="btn btn-green-outline">List Your Property</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⚫ FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Rent house</h4>
+        <p>Brokerage-free property rentals made simple, verified, and accessible across changing destinations.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Legal & Policy</h4>
+        <ul>
+          <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="legal/terms-conditions.html">Terms & Conditions</a></li>
+          <li><a id="about-us">About Us </a></li>
+          <li><a id="contact-support">Contact Support : +91 7323091261</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/rent_house.offical?utm_source=qr&igsh=MWx0NHJoc2NhcmQyeg==">Instagram  </a></li>
+          <li><a href="https://www.linkedin.com/company/rent-house">LinkedIn</a></li>
+          <li><a href="https://twitter.com/rent_house">Twitter</a></li>
+          <li><a href="https://www.facebook.com/rent_house">Facebook</a></li>
+          <li><a href="https://whatsapp.com/channel/0029VbCpkXhIHphJbezW2H3d">whatsapp chammel</a></li>
+          <li><a href="#">Email Updates</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 City house Technologies. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- LINK EXTERNAL JAVASCRIPT FILE -->
+  <script src="js/main script.js"></script>
+</body>
+</html>
